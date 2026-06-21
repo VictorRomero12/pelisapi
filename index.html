@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Finder - Explora Series</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="src/js/api.js" defer></script>
+  <script src="src/js/index.js" defer></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container header-flex">
+      <h1 class="logo"><a href="index.html">TV<span>Finder</span></a></h1>
+      <form id="search-form" class="search-form">
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Busca una serie..." 
+          required
+          aria-label="Buscar series"
+        >
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="results-section">
+      <h2 id="section-title" class="section-title">Series Populares</h2>
+      <div id="results-grid" class="movies-grid">
+        <p class="loading-text">Cargando sugerencias...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2026 TV Finder. Datos provistos por <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener">TVMaze API</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

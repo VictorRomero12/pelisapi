@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Finder - Detalle de la Serie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="src/js/api.js" defer></script>
+  <script src="src/js/detail.js" defer></script>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container header-flex">
+      <h1 class="logo"><a href="index.html">TV<span>Finder</span></a></h1>
+      <a href="index.html" class="btn btn-secondary">&larr; Volver al inicio</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="detail-container" class="detail-card">
+       <p class="loading-text">Cargando información de la serie...</p>
+    </article>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2026 TV Finder. Datos provistos por <a href="https://www.tvmaze.com/api" target="_blank" rel="noopener">TVMaze API</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

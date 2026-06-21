@@ -1,0 +1,51 @@
+.main-header {
+  background-color: $color-surface;
+  padding: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.detail-layout {
+  display: flex;
+  gap: 3rem;
+  background-color: $color-surface;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+.main-footer {
+  background-color: $color-surface;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+
+  a {
+    color: $color-primary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
